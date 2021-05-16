@@ -38,10 +38,10 @@ public class HDFCLandingPage {
 		chooseCitizenOption.click();
 	}
 	
-	public void selectFixedDepositType()
+	public void selectFixedDepositType(String paymentType)
 	{
 		Select s=new Select(selectFixedDepositeType);
-		s.selectByVisibleText("Monthly Payout");
+		s.selectByVisibleText(paymentType);
 	}
 	
 	public void provideDepositeTerms(String months,String days)

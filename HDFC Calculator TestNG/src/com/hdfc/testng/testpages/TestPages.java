@@ -6,6 +6,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.hdfc.testng.fetchtestdata.FetchTestData;
 import com.hdfc.testng.pages.HDFCCalculatorePage;
 import com.hdfc.testng.pages.HDFCLandingPage;
 
@@ -33,10 +34,10 @@ public class TestPages {
 		hdfcLandingPage=new HDFCLandingPage(driver);
 		hdfcCalculatorePage=new HDFCCalculatorePage(driver);
 		hdfcLandingPage.chooseCitizenOption();
-		hdfcLandingPage.selectFixedDepositType();
-		hdfcLandingPage.provideDepositeTerms("9", "10");
-		hdfcCalculatorePage.selectDateOfFD("5");
-		hdfcCalculatorePage.fixedDepositAmount("6000");
+		hdfcLandingPage.selectFixedDepositType(FetchTestData.fetchTestData("Sheet1", 0, 0));
+		hdfcLandingPage.provideDepositeTerms(FetchTestData.fetchTestData("Sheet1", 0, 1), FetchTestData.fetchTestData("Sheet1", 0, 2));
+		hdfcCalculatorePage.selectDateOfFD(FetchTestData.fetchTestData("Sheet1", 0, 3));
+		hdfcCalculatorePage.fixedDepositAmount(FetchTestData.fetchTestData("Sheet1", 0, 4));
 	}
 	
 	@AfterTest

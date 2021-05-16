@@ -14,7 +14,7 @@ public class FetchTestData {
 		String cellValue=null;
 		try
 		{
-			FileInputStream excelfile=new FileInputStream("C:\\Users\\ANWESHA\\Eclipse_Updated_WorkSpace\\CodePractice\\Revision\\Go Ibibo Test NG\\src\\com\\flightbooking\\qa\\excelfiles\\TestDataFile.xlsx");
+			FileInputStream excelfile=new FileInputStream("C:\\Users\\ANWESHA\\git\\HDFC_TestNGProject\\HDFC Calculator TestNG\\src\\com\\hdfc\\testng\\excelfiles\\TestData.xlsx");
 			XSSFWorkbook workbook= new XSSFWorkbook(excelfile);
 			XSSFSheet sheet=workbook.getSheet(sheetName);
 			XSSFRow rownum=sheet.getRow(rowNum);
