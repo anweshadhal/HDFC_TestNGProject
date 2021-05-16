@@ -36,6 +36,15 @@ public class HDFCCalculatorePage {
 	@FindBy(xpath="//div[@class=\"innerBox\"]/span")
 	List<WebElement> outPut;
 	
+	@FindBy(xpath="//span[@class=\"dueDate\"]")
+	WebElement dueDate;
+	
+	@FindBy(xpath="//div[@class=\"InterestWrap\"]/div/span")
+	WebElement interestAmount;
+	
+	@FindBy(xpath="//div[@class=\"resultWrap\"]/div[1]/span")
+	WebElement maturityValue;
+	
 	public HDFCCalculatorePage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -73,21 +82,9 @@ public class HDFCCalculatorePage {
 		depositAmount.click();
 		depositAmount.sendKeys(amount);
 		calculateBtn.click();
-		for(int i=1;i<=outPut.size();i++)
-		{
-			if(i==1)
-			{
-				System.out.println("Maturity Value: "+driver.findElement(By.xpath("//div[@class='innerBox']/span["+i+"]")).getText().toString());
-			}
-			if(i==2)
-			{
-				System.out.println("Maturity Due date: "+driver.findElement(By.xpath("//div[@class='innerBox']/span["+i+"]")).getText().toString());
-			}
-			else
-			{
-				System.out.println("Aggregate Interest Amount: "+driver.findElement(By.xpath("//div[@class='innerBox']/span["+i+"]")).getText().toString());
-			}
-		}
+		System.out.println("Maturity Value is: "+maturityValue.getText());
+		System.out.println("Due date for the amount to get matured is: "+dueDate.getText());
+		System.out.println("Interest amount is: "+interestAmount.getText());
 	}
 
 }
