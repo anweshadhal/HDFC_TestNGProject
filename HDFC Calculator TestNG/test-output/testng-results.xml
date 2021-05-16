@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32841" started-at="2021-05-16T11:34:51Z" finished-at="2021-05-16T11:35:24Z">
+  <suite name="Default suite" duration-ms="71396" started-at="2021-05-16T11:52:36Z" finished-at="2021-05-16T11:53:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32841" started-at="2021-05-16T11:34:51Z" finished-at="2021-05-16T11:35:24Z">
+    <test name="Default test" duration-ms="71396" started-at="2021-05-16T11:52:36Z" finished-at="2021-05-16T11:53:48Z">
       <class name="com.hdfc.testng.testpages.TestPages">
-        <test-method status="PASS" signature="openURL()[pri:0, instance:com.hdfc.testng.testpages.TestPages@675d3402]" name="openURL" is-config="true" duration-ms="21907" started-at="2021-05-16T17:04:51Z" finished-at="2021-05-16T17:05:13Z">
+        <test-method status="PASS" signature="openURL()[pri:0, instance:com.hdfc.testng.testpages.TestPages@675d3402]" name="openURL" is-config="true" duration-ms="52045" started-at="2021-05-16T17:22:36Z" finished-at="2021-05-16T17:23:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="testPages()[pri:0, instance:com.hdfc.testng.testpages.TestPages@675d3402]" name="testPages" duration-ms="10887" started-at="2021-05-16T17:05:13Z" finished-at="2021-05-16T17:05:24Z">
+        <test-method status="PASS" signature="testPages()[pri:0, instance:com.hdfc.testng.testpages.TestPages@675d3402]" name="testPages" duration-ms="19297" started-at="2021-05-16T17:23:29Z" finished-at="2021-05-16T17:23:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPages -->
-        <test-method status="PASS" signature="closeWindows()[pri:0, instance:com.hdfc.testng.testpages.TestPages@675d3402]" name="closeWindows" is-config="true" duration-ms="0" started-at="2021-05-16T17:05:24Z" finished-at="2021-05-16T17:05:24Z">
+        <test-method status="PASS" signature="closeWindows()[pri:0, instance:com.hdfc.testng.testpages.TestPages@675d3402]" name="closeWindows" is-config="true" duration-ms="1" started-at="2021-05-16T17:23:48Z" finished-at="2021-05-16T17:23:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindows -->
